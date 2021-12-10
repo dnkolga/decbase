@@ -2,6 +2,9 @@
 @import "./utilites/minimize";
 @import "./utilites/vars";
 @import "./utilites/hidden";
+@import "./utilites/mixins_placeholders";
 
 @import "./sections/common";
-@import "./sections/header"
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/servise"

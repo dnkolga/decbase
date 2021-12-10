@@ -1,0 +1,45 @@
+.service {
+    @extend .section;
+
+    &__box {
+        margin: 0 121px 204px 121px;
+    }
+
+    &__pre-title {
+        @include font (20px, 600, 1.4);
+    }
+
+    &__title {
+        @include font (48px, 500, 1.6);
+        color: $title;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: block;
+        width: 425px; height: 193px;
+        background: $light;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+        border-radius: 60px 0px;
+
+        transition: all 300ms linear;
+
+        &--title {
+            color: $title;
+        }
+
+        &:hover,
+        &:focus {
+            color: $light;
+            background-color: $accent;
+
+            & .service__item--title {
+                color: $light;
+            }
+        }
+    }
+    
+}

@@ -1,5 +1,31 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $text;
+}
+
 .section {
     width: 1650px;
     padding: 0, 15px;
     margin-right: auto; margin-left: auto;
 }
+
+.btn {
+    border-radius: 15px 0;
+    border: 1px solid transparent;
+    color: $light;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all 300ms linear;
+}
+
+.btn__inverse {
+    color: $second__accent;
+    background-color: $light;
+    border: 1px solid $second__accent;
+}
+
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Raleway', sans-serif;

@@ -1,9 +1,13 @@
 .header {
     @extend .section;
 
+    &__box {
+        margin-bottom: 94px;
+    }
     &__nav {
         display: flex;
-        align-items: baseline;
+        align-items: center;
+        margin-top: 34px;
     }
 
     &__logo {
@@ -22,15 +26,29 @@
 
     &__link {
         width: 100%; height: 100%;
-        padding: 20px;
+        padding: 20px 0;
+        @include font (16px, 600, 1.36);
         text-transform: uppercase;
-        color: $nav__item-color;
 
         transition: opacity 300ms linear;
 
         &:hover,
         &:focus {
             opacity: .5;
+        }
+    }
+    &__btn {
+        @extend .btn ;
+        @include font (16px, 600, 1.36);
+        padding: 5px 19px;
+        background-color: $accent;
+        margin-right: 150px;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+            background-color: $light;
+            border: 1px solid $accent;
         }
     }
 }
